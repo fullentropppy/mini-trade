@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.19">
+	<Item id="0b69b21e-2b88-4347-a320-c31c6e38aab0">
+		<Name>ДатыЗапретаРедактирования</Name>
+		<Code>00-000003</Code>
+		<Description>Даты запрета редактирования</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="2dce4694-6402-499b-a4d7-199625409391">
+				<Name>ДЗР_НеиспользуемыйФункционал</Name>
+				<Code>00-000004</Code>
+				<Description>Неиспользуемый функционал ДЗР</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="f46c8e0b-ae0d-4ae0-b155-4b45b5dd779b">
+		<Name>Другие</Name>
+		<Code>00-000008</Code>
+		<Description>Другие</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="cf5fc268-15b1-48db-9c48-e834416f762b">
+		<Name>Общие</Name>
+		<Code>00-000005</Code>
+		<Description>Обшие</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="efb87a51-6d82-4e3d-be42-3c7737b61292">
+				<Name>Внутрисистемная</Name>
+				<Code>00-000007</Code>
+				<Description>Внутрисистемная</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="39b4fe18-be8d-481d-ab56-0cb724bd8f9d">
+				<Name>Неклассифицированная</Name>
+				<Code>00-000006</Code>
+				<Description>Неклассифицированная</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="3c16a35d-e1db-4924-b436-5ec82ef431f3">
+		<Name>ПолнотекстовыйПоискДанных</Name>
+		<Code>00-000001</Code>
+		<Description>Полнтекстовый поиск данных</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="f8910f85-413d-4708-a55e-d25b4ef6b6a2">
+				<Name>ППД_НеиспользуемыйФункционал</Name>
+				<Code>00-000002</Code>
+				<Description>Неиспользуемый функционал ППД</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

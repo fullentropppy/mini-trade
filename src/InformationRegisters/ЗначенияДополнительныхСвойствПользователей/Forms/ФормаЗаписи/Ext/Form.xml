@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<ButtonGroup name="ОсновныеКоманды" id="14">
+				<UserVisible>
+					<xr:Common>false</xr:Common>
+					<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					<xr:Value name="Role.СпециалистНСИ">true</xr:Value>
+					<xr:Value name="Role.СпециалистПоМаркетингу">true</xr:Value>
+				</UserVisible>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Основные команды</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Основные команды</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ОсновныеКомандыРасширеннаяПодсказка" id="15"/>
+				<ChildItems>
+					<Button name="ФормаЗаписатьИЗакрыть" id="16">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+						<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="17"/>
+					</Button>
+					<Button name="ФормаЗаписать" id="18">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.StandardCommand.Write</CommandName>
+						<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="19"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Button name="ФормаПеречитать" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Reread</CommandName>
+				<ExtendedTooltip name="ФормаПеречитатьРасширеннаяПодсказка" id="25"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<InputField name="Пользователь" id="1">
+					<DataPath>Запись.Пользователь</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ПользовательКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Свойство" id="4">
+					<DataPath>Запись.Свойство</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="СвойствоКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="СвойствоРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Значение" id="7">
+					<DataPath>Запись.Значение</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<TypeLink>
+						<xr:DataPath>Запись.Свойство</xr:DataPath>
+						<xr:LinkItem>0</xr:LinkItem>
+					</TypeLink>
+					<ContextMenu name="ЗначениеКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ЗначениеРасширеннаяПодсказка" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЗначенияДополнительныхСвойствПользователей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

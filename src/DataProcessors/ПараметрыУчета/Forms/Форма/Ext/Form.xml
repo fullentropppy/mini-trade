@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>60</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьПараметрыУчета" id="9">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<TextColor>style:ЦветМикротекста</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры учета хозяйственной деятельности организации</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьПараметрыУчетаКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="НадписьПараметрыУчетаРасширеннаяПодсказка" id="11"/>
+				</LabelDecoration>
+				<LabelDecoration name="Отступ1" id="12">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ1КонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="Отступ1РасширеннаяПодсказка" id="14"/>
+				</LabelDecoration>
+				<UsualGroup name="РеквизитыОрганизации" id="27">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты организации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты организации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="РеквизитыОрганизацииРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<LabelDecoration name="ПодсказкаРеквизитыОрганизации" id="31">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование организации и настройка префикса документов
+</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПодсказкаРеквизитыОрганизацииКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ПодсказкаРеквизитыОрганизацииРасширеннаяПодсказка" id="33"/>
+						</LabelDecoration>
+						<Button name="ОткрытьРеквизитыОрганизации" id="45">
+							<Type>Hyperlink</Type>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<CommandName>Form.Command.ОткрытьРеквизитыОрганизации</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="ОткрытьРеквизитыОрганизацииРасширеннаяПодсказка" id="46"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Отступ2" id="15">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ2КонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="Отступ2РасширеннаяПодсказка" id="17"/>
+				</LabelDecoration>
+				<UsualGroup name="Финансы" id="49">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Финансы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Финансы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ExtendedTooltip name="ФинансыРасширеннаяПодсказка" id="50"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВалютаУчета" id="60">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта учета</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта учета</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалютаУчетаРасширеннаяПодсказка" id="61"/>
+							<ChildItems>
+								<InputField name="ВалютаУчета" id="54">
+									<DataPath>ВалютаУчета</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<SkipOnInput>true</SkipOnInput>
+									<ContextMenu name="ВалютаУчетаКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ВалютаУчетаРасширеннаяПодсказка" id="56"/>
+								</InputField>
+								<LabelDecoration name="ПодсказкаВалютаУчета" id="57">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя валюты учета хозяйственной деятельности организации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В данной версии программы валюта RUB (российский рубль) предопределена и недоступна для редактирования</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ContextMenu name="ПодсказкаВалютаУчетаКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ПодсказкаВалютаУчетаРасширеннаяПодсказка" id="59"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Отступ3" id="24">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ3КонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="Отступ3РасширеннаяПодсказка" id="26"/>
+				</LabelDecoration>
+				<UsualGroup name="Склад" id="47">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<CheckBoxField name="ВестиУчетПоСкладам" id="18">
+							<DataPath>ВестиУчетПоСкладам</DataPath>
+							<SkipOnInput>true</SkipOnInput>
+							<TitleLocation>Right</TitleLocation>
+							<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВестиУчетПоСкладамКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ВестиУчетПоСкладамРасширеннаяПодсказка" id="20"/>
+							<Events>
+								<Event name="OnChange">ВестиУчетПоСкладамПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ПодсказкаВестиУчетПоСкладам" id="21">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>style:ЦветМикротекста</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вести учет движений товаров организации в разрезе складов. При включенном учете будет доступен справочник Склады, документ Перемещение товаров и выбор склада в документах, где это применимо</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПодсказкаВестиУчетПоСкладамКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ПодсказкаВестиУчетПоСкладамРасширеннаяПодсказка" id="23"/>
+						</LabelDecoration>
+						<LabelDecoration name="Отступ4" id="39">
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+							<ContextMenu name="Отступ4КонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="Отступ4РасширеннаяПодсказка" id="41"/>
+						</LabelDecoration>
+						<UsualGroup name="КонтрольОстатковТоваров" id="34">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контроль остатков товаров</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контроль остатков товаров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<ShowLeftMargin>false</ShowLeftMargin>
+							<ExtendedTooltip name="КонтрольОстатковТоваровРасширеннаяПодсказка" id="35"/>
+							<ChildItems>
+								<CheckBoxField name="КонтролироватьОстаткиТоваров" id="3">
+									<DataPath>КонтролироватьОстаткиТоваров</DataPath>
+									<SkipOnInput>true</SkipOnInput>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КонтролироватьОстаткиТоваровКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="КонтролироватьОстаткиТоваровРасширеннаяПодсказка" id="5"/>
+									<Events>
+										<Event name="OnChange">КонтролироватьОстаткиТоваровПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="ПодсказкаКонтролироватьОстаткиТоваров" id="6">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Контролировать наличие свободных остатков при списании товаров со склада при проведении документов, списывающих эти остатки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПодсказкаКонтролироватьОстаткиТоваровКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="ПодсказкаКонтролироватьОстаткиТоваровРасширеннаяПодсказка" id="8"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаКонтролироватьОстаткиТоваровПоСкладам" id="75">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа контролировать остатки товаров по складам</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа контролировать остатки товаров по складам</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКонтролироватьОстаткиТоваровПоСкладамРасширеннаяПодсказка" id="76"/>
+									<ChildItems>
+										<LabelDecoration name="Отступ5" id="51">
+											<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+											<ContextMenu name="Отступ5КонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="Отступ5РасширеннаяПодсказка" id="53"/>
+										</LabelDecoration>
+										<CheckBoxField name="КонтролироватьОстаткиТоваровПоСкладам" id="36">
+											<DataPath>КонтролироватьОстаткиТоваровПоСкладам</DataPath>
+											<SkipOnInput>true</SkipOnInput>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КонтролироватьОстаткиТоваровПоСкладамКонтекстноеМеню" id="37"/>
+											<ExtendedTooltip name="КонтролироватьОстаткиТоваровПоСкладамРасширеннаяПодсказка" id="38"/>
+											<Events>
+												<Event name="OnChange">КонтролироватьОстаткиТоваровПоСкладамПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<LabelDecoration name="ПодсказкаКонтролироватьОстаткиТоваровПоСкладам" id="42">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<TextColor>style:ЦветМикротекста</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индивидуальная настройка контроля свободных остатков для каждого склада по отдельности, при проведении документов, списывающих эти остатки</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПодсказкаКонтролироватьОстаткиТоваровПоСкладамКонтекстноеМеню" id="43"/>
+											<ExtendedTooltip name="ПодсказкаКонтролироватьОстаткиТоваровПоСкладамРасширеннаяПодсказка" id="44"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Отступ6" id="62">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ6КонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="Отступ6РасширеннаяПодсказка" id="64"/>
+				</LabelDecoration>
+				<UsualGroup name="РедактированиеДокументов" id="65">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Редактирование документов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Редактирование документов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ExtendedTooltip name="РедактированиеДокументовРасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьДатыЗапретаРедактирования" id="67">
+							<DataPath>ИспользоватьДатыЗапретаРедактирования</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьДатыЗапретаРедактированияКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ИспользоватьДатыЗапретаРедактированияРасширеннаяПодсказка" id="69"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьДатыЗапретаРедактированияПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ПодсказкаИспользоватьДатыЗапретаРедактирования" id="70">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>style:ЦветМикротекста</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использовать механизм ограничения доступности редактирования документов в закрытых периодах</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПодсказкаИспользоватьДатыЗапретаРедактированияКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ПодсказкаИспользоватьДатыЗапретаРедактированияРасширеннаяПодсказка" id="72"/>
+						</LabelDecoration>
+						<UsualGroup name="ГиперссылкиРедактированиеДокументов" id="77">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гиперссылки редактирование документов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гиперссылки редактирование документов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГиперссылкиРедактированиеДокументовРасширеннаяПодсказка" id="78"/>
+							<ChildItems>
+								<Button name="ОткрытьУправлениеДатамиЗапретаРедактирования" id="73">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУправлениеДатамиЗапретаРедактирования</CommandName>
+									<TextColor>style:ЦветГиперссылки</TextColor>
+									<ExtendedTooltip name="ОткрытьУправлениеДатамиЗапретаРедактированияРасширеннаяПодсказка" id="74"/>
+								</Button>
+								<Button name="ОткрытьДатыЗапретаРедактирования" id="79">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьДатыЗапретаРедактирования</CommandName>
+									<TextColor>style:ЦветГиперссылки</TextColor>
+									<ExtendedTooltip name="ОткрытьДатыЗапретаРедактированияРасширеннаяПодсказка" id="80"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="КонтролироватьОстаткиТоваров" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контролировать остатки товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВестиУчетПоСкладам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вести учет по складам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КонтролироватьОстаткиТоваровПоСкладам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индивидуальная настройка контроля остатков для каждого склада</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<FunctionalOptions>
+				<Item>a5153698-e0f5-4823-a61b-d6d7e496d305</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ВалютаУчета" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта учета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>3</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Объект" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПараметрыУчета</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИспользоватьДатыЗапретаРедактирования" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать даты запрета редактирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьРеквизитыОрганизации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты организации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть реквизиты организации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataProcessor</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРеквизитыОрганизации</Action>
+		</Command>
+		<Command name="ОткрытьУправлениеДатамиЗапретаРедактирования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление датами запрета редактирования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть управление датами запрета редактирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataProcessor</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьУправлениеДатамиЗапретаРедактирования</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьДатыЗапретаРедактирования</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="ОткрытьДатыЗапретаРедактирования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Даты запрета редактирования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть даты запрета редактирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InformationRegister</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьДатыЗапретаРедактирования</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьДатыЗапретаРедактирования</Item>
+			</FunctionalOptions>
+		</Command>
+	</Commands>
+</Form>

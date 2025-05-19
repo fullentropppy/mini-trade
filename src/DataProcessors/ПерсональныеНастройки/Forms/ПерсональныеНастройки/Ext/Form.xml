@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<ButtonGroup name="ОсновныеКоманды" id="57">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Основные команды</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Основные команды</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ОсновныеКомандыРасширеннаяПодсказка" id="58"/>
+				<ChildItems>
+					<Button name="ФормаЗаписатьИЗакрыть" id="9">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
+						<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="10"/>
+					</Button>
+					<Button name="ФормаЗаписать" id="11">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Записать</CommandName>
+						<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="12"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>54</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="Пользователь" id="51">
+					<DataPath>Пользователь</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<DropListButton>false</DropListButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<TextEdit>false</TextEdit>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ПользовательКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="53"/>
+					<Events>
+						<Event name="StartChoice">ПользовательНачалоВыбора</Event>
+						<Event name="ChoiceProcessing">ПользовательОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="Разделитель1" id="65">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<Border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+					</Border>
+					<ContextMenu name="Разделитель1КонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="Разделитель1РасширеннаяПодсказка" id="67"/>
+				</LabelDecoration>
+				<UsualGroup name="Маркетинг" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Маркетинг</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ShowLeftMargin>false</ShowLeftMargin>
+					<ExtendedTooltip name="МаркетингРасширеннаяПодсказка" id="27"/>
+					<ChildItems>
+						<LabelDecoration name="ПодсказкаМаркетинг" id="36">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>style:ЦветМикротекста</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматически подставляемые виды цен при создании новых документов</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПодсказкаМаркетингКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ПодсказкаМаркетингРасширеннаяПодсказка" id="38"/>
+						</LabelDecoration>
+						<InputField name="ОсновнойВидЦенПоступленияТоваров" id="30">
+							<DataPath>ОсновнойВидЦенПоступленияТоваров</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматически подставляемый вид цены в новых документов поступления товаров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ОсновнойВидЦенПоступленияТоваровКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ОсновнойВидЦенПоступленияТоваровРасширеннаяПодсказка" id="32"/>
+						</InputField>
+						<InputField name="ОсновнойВидЦенПродажаТоваров" id="33">
+							<DataPath>ОсновнойВидЦенПродажаТоваров</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматически подставляемый вид цены в новых документов продажи товаров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ОсновнойВидЦенПродажаТоваровКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ОсновнойВидЦенПродажаТоваровРасширеннаяПодсказка" id="35"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Отступ1" id="42">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ1КонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="Отступ1РасширеннаяПодсказка" id="44"/>
+				</LabelDecoration>
+				<UsualGroup name="Печать" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ShowLeftMargin>false</ShowLeftMargin>
+					<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<InputField name="ФИОДляПечати" id="16">
+							<DataPath>ФИОДляПечати</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Используемое при печати ФИО. Если не указано, при печати будет использовано значение реквизита документа Автор</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ФИОДляПечатиКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ФИОДляПечатиРасширеннаяПодсказка" id="18"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Отступ2" id="45">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ2КонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="Отступ2РасширеннаяПодсказка" id="47"/>
+				</LabelDecoration>
+				<UsualGroup name="Прочее" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ShowLeftMargin>false</ShowLeftMargin>
+					<ExtendedTooltip name="ПрочееРасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<InputField name="ОсновнойСклад" id="48">
+							<DataPath>ОсновнойСклад</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматически подставляемый склад в новых документов, где это применимо</v8:content>
+								</v8:item>
+							</ToolTip>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ОсновнойСкладКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ОсновнойСкладРасширеннаяПодсказка" id="50"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Разделитель2" id="68">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<Border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+					</Border>
+					<ContextMenu name="Разделитель2КонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="Разделитель2РасширеннаяПодсказка" id="70"/>
+				</LabelDecoration>
+				<CheckBoxField name="ЗапрашиватьПодтверждение" id="13">
+					<DataPath>ЗапрашиватьПодтверждение</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗапрашиватьПодтверждениеКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ЗапрашиватьПодтверждениеРасширеннаяПодсказка" id="15"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗапрашиватьПодтверждение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрашивать подтверждение при завершении работы с программой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ФИОДляПечати" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФИО для печати</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОсновнойВидЦенПоступленияТоваров" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОсновнойВидЦенПродажаТоваров" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продажа товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОсновнойСклад" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной склад</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Объект" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПерсональныеНастройки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Пользователь" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяВладельцаНастроек" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя владельца настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИндивидуальнаяНастройка" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индивидуальная настройка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаписатьИЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные и закрыть форму</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаписатьИЗакрыть</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Записать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+S</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Записать</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

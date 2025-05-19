@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>80</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьОбслуживание" id="3">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<TextColor>style:ЦветМикротекста</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр активных пользователей и контроль фоновых операций</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьОбслуживаниеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НадписьОбслуживаниеРасширеннаяПодсказка" id="5"/>
+				</LabelDecoration>
+				<LabelDecoration name="Отступ1" id="6">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ1КонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="Отступ1РасширеннаяПодсказка" id="8"/>
+				</LabelDecoration>
+				<Button name="ОткрытьНастройкиПользователей" id="22">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ОткрытьНастройкиПользователей</CommandName>
+					<TextColor>style:ЦветГиперссылки</TextColor>
+					<ExtendedTooltip name="ОткрытьНастройкиПользователейРасширеннаяПодсказка" id="23"/>
+				</Button>
+				<LabelDecoration name="ПодсказкаНастройкиПользователей" id="24">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:ЦветМикротекста</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр и изменение персональных настроек пользователей информационной базы</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПодсказкаНастройкиПользователейКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ПодсказкаНастройкиПользователейРасширеннаяПодсказка" id="26"/>
+				</LabelDecoration>
+				<LabelDecoration name="Отступ2" id="14">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ2КонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="Отступ2РасширеннаяПодсказка" id="16"/>
+				</LabelDecoration>
+				<Button name="ОткрытьСписокАктивныхПользователей" id="17">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ОткрытьСписокАктивныхПользователей</CommandName>
+					<TextColor>style:ЦветГиперссылки</TextColor>
+					<ExtendedTooltip name="ОткрытьСписокАктивныхПользователейРасширеннаяПодсказка" id="18"/>
+				</Button>
+				<LabelDecoration name="ПодсказкаСписокАктивныхПользователей" id="19">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:ЦветМикротекста</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр списка активных пользователей информационной базы</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПодсказкаСписокАктивныхПользователейКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ПодсказкаСписокАктивныхПользователейРасширеннаяПодсказка" id="21"/>
+				</LabelDecoration>
+				<LabelDecoration name="Отступ3" id="27">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ3КонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="Отступ3РасширеннаяПодсказка" id="29"/>
+				</LabelDecoration>
+				<Button name="ОткрытьКонсольРегламентныхИФоновыхЗаданий" id="9">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ОткрытьКонсольРегламентныхИФоновыхЗаданий</CommandName>
+					<TextColor>style:ЦветГиперссылки</TextColor>
+					<ExtendedTooltip name="ОткрытьКонсольРегламентныхИФоновыхЗаданийРасширеннаяПодсказка" id="10"/>
+				</Button>
+				<LabelDecoration name="ПодсказкаРегламентныеИФоновыеЗадания" id="11">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:ЦветМикротекста</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление состоянием, планирование и просмотр регламентных и фоновых заданий</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПодсказкаРегламентныеИФоновыеЗаданияКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ПодсказкаРегламентныеИФоновыеЗаданияРасширеннаяПодсказка" id="13"/>
+				</LabelDecoration>
+				<LabelDecoration name="Отступ4" id="35">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ4КонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="Отступ4РасширеннаяПодсказка" id="37"/>
+				</LabelDecoration>
+				<Button name="ОткрытьПоискОбъектовПоУникальномуИдентификатору" id="30">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ОткрытьПоискСсылокОбъектовПоУникальномуИдентификатору</CommandName>
+					<TextColor>style:ЦветГиперссылки</TextColor>
+					<ExtendedTooltip name="ОткрытьПоискОбъектовПоУникальномуИдентификаторуРасширеннаяПодсказка" id="31"/>
+				</Button>
+				<LabelDecoration name="ПодсказкаПоискОбъектовПоУникальномуИдентификатору" id="32">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:ЦветМикротекста</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск ссылок объектов и получение уникального идентификатора ссылки объекта</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПодсказкаПоискОбъектовПоУникальномуИдентификаторуКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПодсказкаПоискОбъектовПоУникальномуИдентификаторуРасширеннаяПодсказка" id="34"/>
+				</LabelDecoration>
+				<LabelDecoration name="Отступ5" id="49">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ5КонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="Отступ5РасширеннаяПодсказка" id="51"/>
+				</LabelDecoration>
+				<UsualGroup name="ИнформацияОбИзменениях" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация об изменениях</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация об изменениях</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ИнформацияОбИзмененияхРасширеннаяПодсказка" id="74"/>
+					<ChildItems>
+						<UsualGroup name="ГиперссылкиИнформацияОбИзменениях" id="64">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гиперссылки информация об изменениях</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гиперссылки информация об изменениях</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГиперссылкиИнформацияОбИзмененияхРасширеннаяПодсказка" id="65"/>
+							<ChildItems>
+								<Button name="ОткрытьИнформациюОбИзменениях" id="66">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьИнформациюОбИзменениях</CommandName>
+									<TextColor>style:ЦветГиперссылки</TextColor>
+									<ExtendedTooltip name="ОткрытьИнформациюОбИзмененияхРасширеннаяПодсказка" id="67"/>
+								</Button>
+								<Button name="ОткрытьИнформациюОбИзмененияхОтчет" id="68">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьИнформациюОбИзмененияхОтчет</CommandName>
+									<TextColor>style:ЦветГиперссылки</TextColor>
+									<ExtendedTooltip name="ОткрытьИнформациюОбИзмененияхОтчетРасширеннаяПодсказка" id="69"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ПодсказкаИнформацияОбИзменениях" id="70">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>style:ЦветМикротекста</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Просмотр записанной информации о произошедших логируемых изменениях объектов в информационной базе</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПодсказкаИнформацияОбИзмененияхКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ПодсказкаИнформацияОбИзмененияхРасширеннаяПодсказка" id="72"/>
+						</LabelDecoration>
+						<LabelDecoration name="Отступ6" id="61">
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+							<ContextMenu name="Отступ6КонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="Отступ6РасширеннаяПодсказка" id="63"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГиперссылкиИнформацииОбОшибках" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гиперссылки информации об ошибках</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гиперссылки информации об ошибках</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГиперссылкиИнформацииОбОшибкахРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<Button name="ОткрытьИнформациюОбОшибках" id="52">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьИнформациюОбОшибках</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="ОткрытьИнформациюОбОшибкахРасширеннаяПодсказка" id="53"/>
+						</Button>
+						<Button name="ОткрытьКатегорииОшибок" id="56">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьКатегорииОшибок</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="ОткрытьКатегорииОшибокРасширеннаяПодсказка" id="57"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ПодсказкаИнформацияОбОшибках" id="58">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:ЦветМикротекста</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр записанной информации о произошедших логируемых ошибках в информационной базе</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПодсказкаИнформацияОбОшибкахКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ПодсказкаИнформацияОбОшибкахРасширеннаяПодсказка" id="60"/>
+				</LabelDecoration>
+				<UsualGroup name="ДополнительныеСредства" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные средства</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные средства</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="ДополнительныеСредстваРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<Button name="ОткрытьКонсольКода" id="47">
+							<Type>Hyperlink</Type>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+								<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+							</UserVisible>
+							<CommandName>Form.Command.ОткрытьКонсольКода</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="ОткрытьКонсольКодаРасширеннаяПодсказка" id="48"/>
+						</Button>
+						<Button name="ОбновитьПовторноИспользуемыеЗначения" id="45">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОбновитьПовторноИспользуемыеЗначения</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<Picture>
+								<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ОбновитьПовторноИспользуемыеЗначенияРасширеннаяПодсказка" id="46"/>
+						</Button>
+						<Button name="ОбновитьНумерациюОбъектов" id="43">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОбновитьНумерациюОбъектов</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="ОбновитьНумерациюОбъектовРасширеннаяПодсказка" id="44"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Обслуживание</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьКонсольРегламентныхИФоновыхЗаданий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентные и фоновые задания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть консоль регламентных и фоновых заданий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataProcessor</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьКонсольРегламентныхИФоновыхЗаданий</Action>
+		</Command>
+		<Command name="ОткрытьСписокАктивныхПользователей" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активные пользователи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список активных пользователей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataProcessor</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьСписокАктивныхПользователей</Action>
+		</Command>
+		<Command name="ОткрытьНастройкиПользователей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть управление персональными настройками пользователей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataProcessor</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьНастройкиПользователей</Action>
+		</Command>
+		<Command name="ОткрытьПоискСсылокОбъектовПоУникальномуИдентификатору" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск ссылок объектов по уникальному идентификатору</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть поиск ссылок объектов по уникальному идентификатору</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataProcessor</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПоискСсылокОбъектовПоУникальномуИдентификатору</Action>
+		</Command>
+		<Command name="ОбновитьПовторноИспользуемыеЗначения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить повторно используемые значения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить повторно используемые значения общих модулей повторного использования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьКэшПовторноИспользуемых</Action>
+		</Command>
+		<Command name="ОбновитьНумерациюОбъектов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить нумерацию объектов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить нумерацию объектов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчиститьВыданныеНезаписанныеНомера</Action>
+		</Command>
+		<Command name="ОткрытьКонсольКода" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Консоль кода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть консоль кода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataProcessor</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьКонсольКода</Action>
+		</Command>
+		<Command name="ОткрытьИнформациюОбОшибках" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об ошибках</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть информацию об ошибках</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InformationRegister</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьИнформациюОбОшибках</Action>
+		</Command>
+		<Command name="ОткрытьКатегорииОшибок" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категории ошибок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть категории ошибок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Catalog</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьКатегорииОшибок</Action>
+		</Command>
+		<Command name="ОткрытьИнформациюОбИзменениях" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об изменениях</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть информацию об изменениях</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InformationRegister</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьИнформациюОбИзменениях</Action>
+		</Command>
+		<Command name="ОткрытьИнформациюОбИзмененияхОтчет" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об изменениях</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть информацию об изменениях</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Report</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьИнформациюОбИзмененияхОтчет</Action>
+		</Command>
+	</Commands>
+</Form>

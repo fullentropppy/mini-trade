@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>60</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьНастройкиПрограммы" id="26">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<TextColor>style:ЦветМикротекста</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Установка заголовка программы, управление полнотекстовым поиском данных и другое</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьНастройкиПрограммыКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="НадписьНастройкиПрограммыРасширеннаяПодсказка" id="28"/>
+				</LabelDecoration>
+				<LabelDecoration name="Отступ1" id="13">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ1КонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="Отступ1РасширеннаяПодсказка" id="15"/>
+				</LabelDecoration>
+				<InputField name="ЗаголовокПрограммы" id="1">
+					<DataPath>ЗаголовокПрограммы</DataPath>
+					<SkipOnInput>true</SkipOnInput>
+					<Width>1</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ЗаголовокПрограммыКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ЗаголовокПрограммыРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ЗаголовокПрограммыПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="Отступ2" id="23">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ2КонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="Отступ2РасширеннаяПодсказка" id="25"/>
+				</LabelDecoration>
+				<UsualGroup name="ПолнотекстовыйПоискДанных" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полнотекстовый поиск данных</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ExtendedTooltip name="ПолнотекстовыйПоискДанныхРасширеннаяПодсказка" id="7"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаИспользоватьППД" id="34">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать ППД</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать ППД</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИспользоватьППДРасширеннаяПодсказка" id="35"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьППД" id="8">
+									<DataPath>ИспользоватьППД</DataPath>
+									<SkipOnInput>true</SkipOnInput>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Быстрый поиск данных в информационной базе</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьППДКонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="ИспользоватьППДРасширеннаяПодсказка" id="10"/>
+									<Events>
+										<Event name="OnChange">ИспользоватьППДПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="ПодсказкаИспользоватьППД" id="36">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Быстрый поиск данных в информационной базе</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПодсказкаИспользоватьППДКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ПодсказкаИспользоватьППДРасширеннаяПодсказка" id="38"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ОткрытьУправлениеППД" id="11">
+							<Type>Hyperlink</Type>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<CommandName>Form.Command.ОткрытьУправлениеППД</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="ОткрытьУправлениеППДРасширеннаяПодсказка" id="12"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Отступ3" id="29">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ3КонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="Отступ3РасширеннаяПодсказка" id="31"/>
+				</LabelDecoration>
+				<UsualGroup name="ЛогированиеИнформацииОбИзменениях" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Логирование информации об изменениях</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ExtendedTooltip name="ЛогированиеИнформацииОбИзмененияхРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<CheckBoxField name="ЛогироватьИнформациюОбИзменениях" id="44">
+							<DataPath>ЛогироватьИнформациюОбИзменениях</DataPath>
+							<SkipOnInput>true</SkipOnInput>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Логировать информацию об ихменениях объектов информационной базы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЛогироватьИнформациюОбИзмененияхКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ЛогироватьИнформациюОбИзмененияхРасширеннаяПодсказка" id="46"/>
+							<Events>
+								<Event name="OnChange">ЛогироватьИнформациюОбИзмененияхПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ПодсказкаЛогироватьИнформациюОбИзменениях" id="47">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ЦветМикротекста</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Логировать информацию об изменениях объектов информационной базы</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПодсказкаЛогироватьИнформациюОбИзмененияхКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ПодсказкаЛогироватьИнформациюОбИзмененияхРасширеннаяПодсказка" id="49"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаКомментироватьИнформациюОбИзменениях" id="54">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа комментировать информацию об изменениях</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа комментировать информацию об изменениях</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомментироватьИнформациюОбИзмененияхРасширеннаяПодсказка" id="55"/>
+							<ChildItems>
+								<LabelDecoration name="Отступ4" id="41">
+									<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+									<ContextMenu name="Отступ4КонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="Отступ4РасширеннаяПодсказка" id="43"/>
+								</LabelDecoration>
+								<CheckBoxField name="КомментироватьИнформациюОбИзменениях" id="56">
+									<DataPath>КомментироватьИнформациюОбИзменениях</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КомментироватьИнформациюОбИзмененияхКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="КомментироватьИнформациюОбИзмененияхРасширеннаяПодсказка" id="58"/>
+									<Events>
+										<Event name="OnChange">КомментироватьИнформациюОбИзмененияхПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="ПодсказкаКомментироватьИнформациюОбИзменениях" id="59">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Комментировать информацию об изменениях объектов информационной базы</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПодсказкаКомментироватьИнформациюОбИзмененияхКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ПодсказкаКомментироватьИнформациюОбИзмененияхРасширеннаяПодсказка" id="61"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГиперссылкиЛогированиеИнформацииОбИзменениях" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гиперссылки логирование информации об изменениях</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гиперссылки логирование информации об изменениях</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГиперссылкиЛогированиеИнформацииОбИзмененияхРасширеннаяПодсказка" id="68"/>
+							<ChildItems>
+								<Button name="ОткрытьИнформациюОбИзмененияхОбъектов" id="52">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьОтчетИнформациюОбИзмененияхОбъектов</CommandName>
+									<TextColor>style:ЦветГиперссылки</TextColor>
+									<ExtendedTooltip name="ОткрытьИнформациюОбИзмененияхОбъектовРасширеннаяПодсказка" id="53"/>
+								</Button>
+								<Button name="ОткрытьРегистрСведенийИнформацияОбИзмененияхОбъектов" id="69">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьРегистрСведенийИнформацияОбИзмененияхОбъектов</CommandName>
+									<TextColor>style:ЦветГиперссылки</TextColor>
+									<ExtendedTooltip name="ОткрытьРегистрСведенийИнформацияОбИзмененияхОбъектовРасширеннаяПодсказка" id="70"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Отступ5" id="64">
+					<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+					<ContextMenu name="Отступ5КонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="Отступ5РасширеннаяПодсказка" id="66"/>
+				</LabelDecoration>
+				<UsualGroup name="ИнформацияОПрограмме" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация о программе</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ExtendedTooltip name="ИнформацияОПрограммеРасширеннаяПодсказка" id="17"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьИнформацияОпрограмме" id="18">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ЦветМикротекста</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;информация о программе&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьИнформацияОпрограммеКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="НадписьИнформацияОпрограммеРасширеннаяПодсказка" id="20"/>
+						</LabelDecoration>
+						<Button name="ОткрытьВерсииПрограммы" id="32">
+							<Type>Hyperlink</Type>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<CommandName>Form.Command.ОткрытьВерсииПрограммы</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="ОткрытьВерсииПрограммыРасширеннаяПодсказка" id="33"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗаголовокПрограммы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок программы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьППД" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полнотекстовый поиск данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Объект" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НастройкиПрограммы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ЛогироватьИнформациюОбИзменениях" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логировать информацию об изменениях</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КомментироватьИнформациюОбИзменениях" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментировать информацию об изменениях</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьУправлениеППД" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть управление индексом полнотекстового поиска данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataProcessor</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьУправлениеППД</Action>
+		</Command>
+		<Command name="ОткрытьВерсииПрограммы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версии программы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть версии программы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Report</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьВерсииПрограммы</Action>
+		</Command>
+		<Command name="ОткрытьОтчетИнформациюОбИзмененияхОбъектов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об изменениях</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть информацию об изменениях объектов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Report</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьИнформациюОбИзмененияхОбъектов</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ЛогироватьИнформациюОбИзменениях</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="ОткрытьРегистрСведенийИнформацияОбИзмененияхОбъектов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об изменениях</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть информацию об изменениях объектов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InformationRegister</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРегистрСведенийИнформацияОбИзмененияхОбъектов</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ЛогироватьИнформациюОбИзменениях</Item>
+			</FunctionalOptions>
+		</Command>
+	</Commands>
+</Form>

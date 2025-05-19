@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Добро пожаловать!</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Разделитель" id="4">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:ЦветВторостепеннойНадписи</TextColor>
+			<Font ref="style:NormalTextFont" kind="StyleItem" scale="25"/>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<BorderColor>style:ЦветВторостепеннойНадписи</BorderColor>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+			</Border>
+			<ContextMenu name="РазделительКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="РазделительРасширеннаяПодсказка" id="6"/>
+		</LabelDecoration>
+		<UsualGroup name="Подвал" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПодвалРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<UsualGroup name="Контакты" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контакты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контакты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="КонтактыРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<Button name="СкопироватьАдресЭлектроннойПочты" id="17">
+							<Type>Hyperlink</Type>
+							<SkipOnInput>true</SkipOnInput>
+							<CommandName>Form.Command.СкопироватьАдресЭлектроннойПочты</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="СкопироватьАдресЭлектроннойПочтыРасширеннаяПодсказка" id="18"/>
+						</Button>
+						<Button name="ОткрытьПрофильInstagram" id="11">
+							<Type>Hyperlink</Type>
+							<SkipOnInput>true</SkipOnInput>
+							<CommandName>Form.Command.ОткрытьПрофильInstagram</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="ОткрытьПрофильInstagramРасширеннаяПодсказка" id="12"/>
+						</Button>
+						<Button name="ОткрытьПрофильTelegram" id="13">
+							<Type>Hyperlink</Type>
+							<SkipOnInput>true</SkipOnInput>
+							<CommandName>Form.Command.ОткрытьПрофильTelegram</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="ОткрытьПрофильTelegramРасширеннаяПодсказка" id="14"/>
+						</Button>
+						<Button name="ОткрытьПрофильВКонтакте" id="15">
+							<Type>Hyperlink</Type>
+							<SkipOnInput>true</SkipOnInput>
+							<CommandName>Form.Command.ОткрытьПрофильVK</CommandName>
+							<TextColor>style:ЦветГиперссылки</TextColor>
+							<ExtendedTooltip name="ОткрытьПрофильВКонтактеРасширеннаяПодсказка" id="16"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="НадписьИнформацияОПрограмме" id="1">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:ЦветВторостепеннойНадписи</TextColor>
+					<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;Информация о программе&gt;</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<BorderColor>#BEBEBE</BorderColor>
+					<ContextMenu name="НадписьИнформацияОПрограммеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НадписьИнформацияОПрограммеРасширеннаяПодсказка" id="3"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ОткрытьПрофильInstagram" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Instagram</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть профиль разработчика в Instagram</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Instagram</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПрофильInstagram</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьПрофильTelegram" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Telegram</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть профиль разработчика в Telegram</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Telegram</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПрофильTelegram</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьПрофильVK" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>VK</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть профиль разработчика в VK</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.VK</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПрофильVK</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СкопироватьАдресЭлектроннойПочты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать адрес электронной почты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать адрес электронной почты разработчика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЭлектроннаяПочта</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СкопироватьАдресЭлектроннойПочты</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

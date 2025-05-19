@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="352801ab-8d6e-46ed-9368-54e65dbcc5eb">
+		<Properties>
+			<Name>Запасы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запасы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗапасыСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КонтролироватьОстаткиТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВестиУчетПоСкладам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ВестиУчетПоСкладам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КонтролироватьОстаткиТоваровПоСкладам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.КонтролироватьОстаткиТоваровПоСкладам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПодборТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗапасыКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗапасыВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗапасыСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">805c370d-6b27-41ea-b290-aa406fa2b58f</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">c85a3753-ff2b-49e4-b329-921b77367cdf</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">5b3dbdee-1e30-43ac-b4bd-350231a63b25</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">cf8bdd7e-b15e-46de-84d3-92fa473d4bc6</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">a5d6ab71-8ab0-410a-9b07-801bb1343c19</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">5f9281aa-de3e-40fb-afb4-b3b4dbb03922</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">3d46af8c-18be-44e1-8a55-641aaec845a8</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">f8651deb-3fd3-40a1-bce6-a5e7efec3f78</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">3080ebe5-39d1-4003-86c2-052f57be70f0</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

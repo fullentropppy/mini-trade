@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<CommandsVisibility>
+		<Command name="Document.УстановкаЦенТоваров.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Товары.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ВидыЦен.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЦеныТоваров.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПодборТоваров.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="100:26d633f6-e3de-4e5d-adc9-b07bed381625">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="100:f9e4203f-ddef-4242-8979-10731c24a615">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:09a8a03c-5d3c-4b1a-a247-d0f4b1181ee6">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.УстановкаЦенТоваров.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГруппаДокументы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Товары.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГруппаСправочников</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ВидыЦен.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГруппаСправочников</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ЦеныТоваров.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="100:26d633f6-e3de-4e5d-adc9-b07bed381625">
+			<CommandGroup>CommandGroup.ГруппаДополнительно</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="100:f9e4203f-ddef-4242-8979-10731c24a615">
+			<CommandGroup>CommandGroup.ГруппаДополнительно</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:09a8a03c-5d3c-4b1a-a247-d0f4b1181ee6">
+			<CommandGroup>CommandGroup.ГруппаДополнительно</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.УстановкаЦенТоваров.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГруппаДокументы</CommandGroup>
+		</Command>
+		<Command name="Catalog.Товары.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГруппаСправочников</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВидыЦен.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГруппаСправочников</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ЦеныТоваров.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.УстановкаЦенТоваров.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Товары.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Товары.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВидыЦен.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВидыЦен.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="100:26d633f6-e3de-4e5d-adc9-b07bed381625">
+			<CommandGroup>CommandGroup.ГруппаДополнительно</CommandGroup>
+		</Command>
+		<Command name="100:f9e4203f-ddef-4242-8979-10731c24a615">
+			<CommandGroup>CommandGroup.ГруппаДополнительно</CommandGroup>
+		</Command>
+		<Command name="0:09a8a03c-5d3c-4b1a-a247-d0f4b1181ee6">
+			<CommandGroup>CommandGroup.ГруппаДополнительно</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.ГруппаДокументы</Group>
+		<Group>CommandGroup.ГруппаСправочников</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>CommandGroup.ГруппаДополнительно</Group>
+	</GroupsOrder>
+</CommandInterface>

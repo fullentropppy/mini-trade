@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.19">
+	<Item id="39378e14-ec6e-4c2f-936c-e9ca613e0bc4">
+		<Name>Запасы</Name>
+		<Code>00-000001</Code>
+		<Description>Запасы</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="ec570a44-bc41-4066-ad09-98adcd0c59e7">
+				<Name>ПроведениеБезКонтроляОстатков</Name>
+				<Code>00-000002</Code>
+				<Description>Проведение без контроля остатков</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8adaec5b-3ca7-4df5-9ff1-83547ac62d9d">
+		<Name>Общее</Name>
+		<Code>00-000005</Code>
+		<Description>Общее</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="4dc50d8b-946a-4cdb-a539-0b3fd5490f92">
+				<Name>ИзменениеАвтораДокумента</Name>
+				<Code>00-000006</Code>
+				<Description>Изменение автора документа</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="fc2f3619-9351-47fe-8716-7a9f7e50d8cc">
+				<Name>ИзменениеКодаСправочника</Name>
+				<Code>00-000008</Code>
+				<Description>Изменение кода справочника</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ed1fed01-4966-4159-853d-7df4485ac004">
+				<Name>ИзменениеНомераДокумента</Name>
+				<Code>00-000007</Code>
+				<Description>Изменение номера документа</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="51e98e0d-adc6-46c3-989d-12096f68d6f6">
+		<Name>Продажи</Name>
+		<Code>00-000003</Code>
+		<Description>Продажи</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="81aa5c5e-83f7-46d4-a2f9-59530e5110cc">
+				<Name>РучноеИзменениеЦеныВПродажеТоваров</Name>
+				<Code>00-000004</Code>
+				<Description>Ручное изменение цены в документе Продажа товаров</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

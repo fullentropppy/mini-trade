@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаВыбрать" id="39">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Выбрать</CommandName>
+				<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="40"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>80</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДоменов" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Домены:</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа доменов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>40</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="ГруппаДоменовРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<Table name="Домены" id="1">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Домены</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список доступных доменов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДоменыКонтекстноеМеню" id="2">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="ДоменыКонтекстноеМенюРаботаСоСписком" id="60">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Домены контекстное меню работа со списком</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Домены контекстное меню работа со списком</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ДоменыКонтекстноеМенюРаботаСоСпискомРасширеннаяПодсказка" id="61"/>
+										<ChildItems>
+											<Button name="ДоменыКонтекстноеМенюСортироватьСписокПоВозрастанию" id="62">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Домены.StandardCommand.SortListAsc</CommandName>
+												<ExtendedTooltip name="ДоменыКонтекстноеМенюСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="63"/>
+											</Button>
+											<Button name="ДоменыКонтекстноеМенюСортироватьСписокПоУбыванию" id="64">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Домены.StandardCommand.SortListDesc</CommandName>
+												<ExtendedTooltip name="ДоменыКонтекстноеМенюСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="65"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Popup name="ДоменыКонтекстноеМенюПодменюРаботаСПоиском" id="68">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Работа с поиском</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Домены контекстное меню подменю работа с поиском</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>StdPicture.Find</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ДоменыКонтекстноеМенюПодменюРаботаСПоискомРасширеннаяПодсказка" id="69"/>
+										<ChildItems>
+											<Button name="ДоменыКонтекстноеМенюНайти" id="72">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Домены.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ДоменыКонтекстноеМенюНайтиРасширеннаяПодсказка" id="73"/>
+											</Button>
+											<Button name="ДоменыКонтекстноеМенюОтменитьПоиск" id="74">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Домены.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ДоменыКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="75"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ДоменыКоманднаяПанель" id="3">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="ДоменыРаботаСоСписком" id="41">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Домены работа со списком</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Домены работа со списком</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ДоменыРаботаСоСпискомРасширеннаяПодсказка" id="42"/>
+										<ChildItems>
+											<Button name="ДоменыСортироватьСписокПоВозрастанию" id="43">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Домены.StandardCommand.SortListAsc</CommandName>
+												<ExtendedTooltip name="ДоменыСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="44"/>
+											</Button>
+											<Button name="ДоменыСортироватьСписокПоУбыванию" id="45">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Домены.StandardCommand.SortListDesc</CommandName>
+												<ExtendedTooltip name="ДоменыСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="46"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<SearchStringAddition name="СтрокаПоискаВДоменах" id="49">
+										<AdditionSource>
+											<Item>Домены</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Строка поиска в доменах</v8:content>
+											</v8:item>
+										</Title>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<ContextMenu name="СтрокаПоискаВДоменахКонтекстноеМеню" id="50"/>
+										<ExtendedTooltip name="СтрокаПоискаВДоменахРасширеннаяПодсказка" id="51"/>
+									</SearchStringAddition>
+									<Popup name="ДоменыПодменюРаботаСПоиском" id="52">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Домены подменю работа с поиском</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Работа с поиском</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>StdPicture.Find</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Representation>Picture</Representation>
+										<ExtendedTooltip name="ДоменыПодменюРаботаСПоискомРасширеннаяПодсказка" id="53"/>
+										<ChildItems>
+											<Button name="ДоменыНайти" id="56">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Домены.StandardCommand.Find</CommandName>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="ДоменыНайтиРасширеннаяПодсказка" id="57"/>
+											</Button>
+											<Button name="ДоменыОтменитьПоиск" id="58">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Домены.StandardCommand.CancelSearch</CommandName>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="ДоменыОтменитьПоискРасширеннаяПодсказка" id="59"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДоменыРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ДоменыСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>Домены</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<ContextMenu name="ДоменыСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ДоменыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДоменыСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>Домены</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоменыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ДоменыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДоменыУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>Домены</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоменыУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ДоменыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ДоменыПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ДоменыИмя" id="14">
+									<DataPath>Домены.Имя</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДоменыИмяКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ДоменыИмяРасширеннаяПодсказка" id="16"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПользователейДомена" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователи домена:</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пользователей домена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>40</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="ГруппаПользователейДоменаРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<Table name="ПользователиДомена" id="17">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ПользователиДомена</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПользователиДоменаКонтекстноеМеню" id="18">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="ПользователиДоменаКонтекстноеМенюРаботаСоСписком" id="91">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пользователи домена контекстное меню работа со списком</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пользователи домена контекстное меню работа со списком</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ПользователиДоменаКонтекстноеМенюРаботаСоСпискомРасширеннаяПодсказка" id="92"/>
+										<ChildItems>
+											<Button name="ПользователиДоменаКонтекстноеМенюСортироватьСписокПоВозрастанию" id="93">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ПользователиДомена.StandardCommand.SortListAsc</CommandName>
+												<ExtendedTooltip name="ПользователиДоменаКонтекстноеМенюСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="94"/>
+											</Button>
+											<Button name="ПользователиДоменаКонтекстноеМенюСортироватьСписокПоУбыванию" id="95">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ПользователиДомена.StandardCommand.SortListDesc</CommandName>
+												<ExtendedTooltip name="ПользователиДоменаКонтекстноеМенюСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="96"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Popup name="ПользователиДоменаКонтекстноеМенюПодменюРаботаСПоиском" id="97">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Работа с поиском</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пользователи домена контекстное меню подменю работа с поиском</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>StdPicture.Find</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ПользователиДоменаКонтекстноеМенюПодменюРаботаСПоискомРасширеннаяПодсказка" id="98"/>
+										<ChildItems>
+											<Button name="ПользователиДоменаКонтекстноеМенюНайти" id="99">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ПользователиДомена.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ПользователиДоменаКонтекстноеМенюНайтиРасширеннаяПодсказка" id="100"/>
+											</Button>
+											<Button name="ПользователиДоменаКонтекстноеМенюОтменитьПоиск" id="101">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ПользователиДомена.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ПользователиДоменаКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="102"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ПользователиДоменаКоманднаяПанель" id="19">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="ПользователиДоменаРаботаСоСписком" id="76">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пользователи домена работа со списком</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пользователи домена работа со списком</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ПользователиДоменаРаботаСоСпискомРасширеннаяПодсказка" id="77"/>
+										<ChildItems>
+											<Button name="ПользователиДоменаСортироватьСписокПоВозрастанию" id="78">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ПользователиДомена.StandardCommand.SortListAsc</CommandName>
+												<ExtendedTooltip name="ПользователиДоменаСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="79"/>
+											</Button>
+											<Button name="ПользователиДоменаСортироватьСписокПоУбыванию" id="80">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ПользователиДомена.StandardCommand.SortListDesc</CommandName>
+												<ExtendedTooltip name="ПользователиДоменаСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="81"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<SearchStringAddition name="СтрокаПоискаВПользователяхДомена" id="82">
+										<AdditionSource>
+											<Item>ПользователиДомена</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Строка поиска в пользователях домена</v8:content>
+											</v8:item>
+										</Title>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<ContextMenu name="СтрокаПоискаВПользователяхДоменаКонтекстноеМеню" id="83"/>
+										<ExtendedTooltip name="СтрокаПоискаВПользователяхДоменаРасширеннаяПодсказка" id="84"/>
+									</SearchStringAddition>
+									<Popup name="ПользователиДоменаПодменюРаботаСПоиском" id="85">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пользователи домена подменю работа с поиском</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Работа с поиском</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>StdPicture.Find</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Representation>Picture</Representation>
+										<ExtendedTooltip name="ПользователиДоменаПодменюРаботаСПоискомРасширеннаяПодсказка" id="86"/>
+										<ChildItems>
+											<Button name="ПользователиДоменаНайти" id="87">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ПользователиДомена.StandardCommand.Find</CommandName>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="ПользователиДоменаНайтиРасширеннаяПодсказка" id="88"/>
+											</Button>
+											<Button name="ПользователиДоменаОтменитьПоиск" id="89">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ПользователиДомена.StandardCommand.CancelSearch</CommandName>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="ПользователиДоменаОтменитьПоискРасширеннаяПодсказка" id="90"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПользователиДоменаРасширеннаяПодсказка" id="20"/>
+							<SearchStringAddition name="ПользователиДоменаСтрокаПоиска" id="21">
+								<AdditionSource>
+									<Item>ПользователиДомена</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<ContextMenu name="ПользователиДоменаСтрокаПоискаКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ПользователиДоменаСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПользователиДоменаСостояниеПросмотра" id="24">
+								<AdditionSource>
+									<Item>ПользователиДомена</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиДоменаСостояниеПросмотраКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="ПользователиДоменаСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПользователиДоменаУправлениеПоиском" id="27">
+								<AdditionSource>
+									<Item>ПользователиДомена</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиДоменаУправлениеПоискомКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="ПользователиДоменаУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ПользователиДоменаВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ПользователиДоменаИмя" id="30">
+									<DataPath>ПользователиДомена.Имя</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПользователиДоменаИмяКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ПользователиДоменаИмяРасширеннаяПодсказка" id="32"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Домены" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Домены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПользователиДомена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи домена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать пользователя операционной системы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ChooseValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Выбрать</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

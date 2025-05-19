@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<ButtonGroup name="Найти" id="34">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Найти</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Найти</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="35"/>
+				<ChildItems>
+					<Button name="ФормаНайти" id="36">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.Find</CommandName>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаНайтиРасширеннаяПодсказка" id="37"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Button name="ФормаСвернутьВсеГруппы" id="38">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.CollapseAllGroups</CommandName>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаСвернутьВсеГруппыРасширеннаяПодсказка" id="39"/>
+			</Button>
+			<Button name="ФормаРазвернутьВсеГруппы" id="40">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.ExpandAllGroups</CommandName>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаРазвернутьВсеГруппыРасширеннаяПодсказка" id="41"/>
+			</Button>
+			<ButtonGroup name="ДополнительныеКоманды" id="42">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дополнительные команды</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дополнительные команды</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ДополнительныеКомандыРасширеннаяПодсказка" id="43"/>
+				<ChildItems>
+					<Button name="ФормаСохранить" id="44">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.Save</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сохранить...</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаСохранитьРасширеннаяПодсказка" id="45"/>
+					</Button>
+					<Button name="ФормаПечать" id="46">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.Print</CommandName>
+						<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="47"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Popup name="ПодменюПоиск" id="48">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Поиск</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подменю поиск</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.Find</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПодменюПоискРасширеннаяПодсказка" id="49"/>
+				<ChildItems>
+					<Button name="НайтиВПодменю" id="50">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.Find</CommandName>
+						<ExtendedTooltip name="НайтиВПодменюРасширеннаяПодсказка" id="51"/>
+					</Button>
+					<Button name="НайтиСледующий" id="52">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.FindNext</CommandName>
+						<ExtendedTooltip name="НайтиСледующийРасширеннаяПодсказка" id="53"/>
+					</Button>
+					<Button name="НайтиПредыдущий" id="54">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.FindPrevious</CommandName>
+						<ExtendedTooltip name="НайтиПредыдущийРасширеннаяПодсказка" id="55"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Popup name="ПодменюРаботаСИсторией" id="56">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Работа с историей</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подменю работа с историей</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.Properties</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПодменюРаботаСИсториейРасширеннаяПодсказка" id="57"/>
+				<ChildItems>
+					<Button name="ПараметрыСтраницы" id="58">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.PageSetup</CommandName>
+						<ExtendedTooltip name="ПараметрыСтраницыРасширеннаяПодсказка" id="59"/>
+					</Button>
+					<Button name="ПредварительныйПросмотр" id="60">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.Preview</CommandName>
+						<ExtendedTooltip name="ПредварительныйПросмотрРасширеннаяПодсказка" id="61"/>
+					</Button>
+					<Button name="ПечатьСразу" id="62">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.PrintImmediately</CommandName>
+						<ExtendedTooltip name="ПечатьСразуРасширеннаяПодсказка" id="63"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<SpreadSheetDocumentField name="ПолеТабличногоДокумента" id="1">
+			<DataPath>ПолеТабличногоДокумента</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ПолеТабличногоДокументаКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ПолеТабличногоДокументаКонтекстноеМенюКопироватьВБуферОбмена" id="4">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.CopyToClipboard</CommandName>
+						<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюКопироватьВБуферОбменаРасширеннаяПодсказка" id="5"/>
+					</Button>
+					<ButtonGroup name="ПолеТабличногоДокументаКонтекстноеМенюОсновныеКоманды" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поле табличного документа контекстное меню основные команды</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поле табличного документа контекстное меню основные команды</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюОсновныеКомандыРасширеннаяПодсказка" id="7"/>
+						<ChildItems>
+							<Button name="ПолеТабличногоДокументаКонтекстноеМенюСвернутьВсеГруппы" id="8">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.CollapseAllGroups</CommandName>
+								<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюСвернутьВсеГруппыРасширеннаяПодсказка" id="9"/>
+							</Button>
+							<Button name="ПолеТабличногоДокументаКонтекстноеМенюРазвернутьВсеГруппы" id="10">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.ExpandAllGroups</CommandName>
+								<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюРазвернутьВсеГруппыРасширеннаяПодсказка" id="11"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="ПолеТабличногоДокументаКонтекстноеМенюДополнительныеКоманды" id="12">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поле табличного документа контекстное меню дополнительные команды</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поле табличного документа контекстное меню дополнительные команды</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюДополнительныеКомандыРасширеннаяПодсказка" id="13"/>
+						<ChildItems>
+							<Button name="ПолеТабличногоДокументаКонтекстноеМенюСохранить" id="14">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.Save</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Сохранить...</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюСохранитьРасширеннаяПодсказка" id="15"/>
+							</Button>
+							<Button name="ПолеТабличногоДокументаКонтекстноеМенюПечать" id="16">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.Print</CommandName>
+								<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюПечатьРасширеннаяПодсказка" id="17"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Popup name="ПолеТабличногоДокументаКонтекстноеМенюПодменюПоиск" id="18">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поиск</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поле табличного документа контекстное меню подменю поиск</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>StdPicture.Find</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюПодменюПоискРасширеннаяПодсказка" id="19"/>
+						<ChildItems>
+							<Button name="ПолеТабличногоДокументаКонтекстноеМенюНайти" id="20">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.Find</CommandName>
+								<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюНайтиРасширеннаяПодсказка" id="21"/>
+							</Button>
+							<Button name="ПолеТабличногоДокументаКонтекстноеМенюНайтиСледующий" id="22">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.FindNext</CommandName>
+								<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюНайтиСледующийРасширеннаяПодсказка" id="23"/>
+							</Button>
+							<Button name="ПолеТабличногоДокументаКонтекстноеМенюНайтиПредыдущий" id="24">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.FindPrevious</CommandName>
+								<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюНайтиПредыдущийРасширеннаяПодсказка" id="25"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<Popup name="ПолеТабличногоДокументаКонтекстноеМенюПодменюРаботаСИсторией" id="26">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Работа с историей</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поле табличного документа контекстное меню подменю работа с историей</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>StdPicture.Properties</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюПодменюРаботаСИсториейРасширеннаяПодсказка" id="27"/>
+						<ChildItems>
+							<Button name="ПолеТабличногоДокументаКонтекстноеМенюПараметрыСтраницы" id="28">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.PageSetup</CommandName>
+								<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюПараметрыСтраницыРасширеннаяПодсказка" id="29"/>
+							</Button>
+							<Button name="ПолеТабличногоДокументаКонтекстноеМенюПредварительныйПросмотр" id="30">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.Preview</CommandName>
+								<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюПредварительныйПросмотрРасширеннаяПодсказка" id="31"/>
+							</Button>
+							<Button name="ПолеТабличногоДокументаКонтекстноеМенюПечатьСразу" id="32">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ПолеТабличногоДокумента.StandardCommand.PrintImmediately</CommandName>
+								<ExtendedTooltip name="ПолеТабличногоДокументаКонтекстноеМенюПечатьСразуРасширеннаяПодсказка" id="33"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</ContextMenu>
+			<ExtendedTooltip name="ПолеТабличногоДокументаРасширеннаяПодсказка" id="3"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ВерсииПрограммы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПолеТабличногоДокумента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле табличного документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

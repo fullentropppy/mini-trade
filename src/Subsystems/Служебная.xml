@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Subsystem uuid="1324cdf6-487f-4f73-9c4a-90700ed39a39">
+		<Properties>
+			<Name>Служебная</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Служебная</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.АдминистраторСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПрефиксацияКодаСправочникаИПланаВидовХарактеристик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПиктограммыЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Папка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Подменю</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Список</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗаполнитьПоШаблону</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.СтартоваяСтраница</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИзменитьНаПроцент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗаполнитьЦены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщиеПодпискиНаСобытияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ОформлениеКомпоновкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВыбратьВариантОтчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СохранитьВариантОтчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДоступКРежимуВсеФункции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ОткрытиеВнешнихОтчетовИОбработок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветМикротекста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.СвязанныеДокументы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ГруппаДополнительно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ГруппаДокументы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ГруппаСправочников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаОтчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаНастроекОтчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФормыКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбъектыСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщиеПодпискиНаСобытияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбщиеДействияОбработкиЗаполненияДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбщиеДействияПриКопированииДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПрефиксацияНомераДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ТекущийПользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.Количество</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.СостояниеОбъекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ЦенаСумма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветВторостепеннойНадписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЧастныеДействияОбработкиЗаполненияДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЧастныеДействияПриКопированииДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодобратьТовары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.Комментарий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Комментарий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СостоянияПроцесса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СостоянияПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОкруглитьЦены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗакрытыйЗамок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОткрытыйЗамок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВерсииПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Предупреждение32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФормыКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТабличныеЧастиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.Автор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СлужебныйСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СлужебныйВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделОсновной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделОсновнойНов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ЗакрытьВсеОкна</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветГиперссылки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Instagram</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Telegram</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.VK</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Style.Основной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЭлектроннаяПочта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Предупреждение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветПриход</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветРасход</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентСерверГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПрограммноеУдалениеОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ВременнаяМетка</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>ПолнотекстовыйПоискДанных</Subsystem>
+			<Subsystem>Запасы</Subsystem>
+			<Subsystem>Ценообразование</Subsystem>
+			<Subsystem>Печать</Subsystem>
+			<Subsystem>Обслуживание</Subsystem>
+			<Subsystem>ИнформацияОбОшибках</Subsystem>
+			<Subsystem>ИнформацияОбИзменениях</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

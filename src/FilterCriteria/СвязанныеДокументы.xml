@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<FilterCriterion uuid="8fc9c5c6-fe30-4eae-8059-28e283895362">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.СвязанныеДокументы" category="Manager">
+				<xr:TypeId>0173884d-1680-4cdf-94b3-e9c35d0a0ab0</xr:TypeId>
+				<xr:ValueId>cff9f890-36bb-4d19-8852-ee7ded68ca4d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.СвязанныеДокументы" category="List">
+				<xr:TypeId>3c427b3d-cf50-42c3-8716-dd9c6ccd3acf</xr:TypeId>
+				<xr:ValueId>53d85d18-0ba4-4c52-815e-1a36d0a72b65</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СвязанныеДокументы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные документы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеТоваров.Attribute.Основание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаТоваров.Attribute.Основание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеТоваров.Attribute.Основание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.УстановкаЦенТоваров.Attribute.Основание</xr:Item>
+			</Content>
+			<DefaultForm>FilterCriterion.СвязанныеДокументы.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</FilterCriterion>
+</MetaDataObject>
